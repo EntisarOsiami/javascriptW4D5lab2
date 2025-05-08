@@ -8,8 +8,9 @@ let trafficLightBulbs = trafficLight.children;
 let trafficLightBulbsArray = Array.from(trafficLightBulbs);
 console.log(trafficLightBulbsArray);
 
-buttonsArray.forEach((button) => {
-  button.addEventListener("click", () => {
+buttonsArray.forEach((button) => { button.addEventListener("click", () => {
+    console.log("clicked", button.id);
+    
     trafficLightBulbsArray.forEach((bulb) => {
       bulb.style.backgroundColor = "";
     });
