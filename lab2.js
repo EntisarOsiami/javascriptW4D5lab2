@@ -20,7 +20,7 @@ let imgArray = [img, img1, img2, img3, img4, img5, img6, img7, img8];
 channel.forEach( (channel, index)=> {
     channel.addEventListener("click", ()=> {
     console.log("clicked", index);
-    let img = document.getElementsByTagName("img")[0];
+    let img = document.getElementsByTagName("img")[1];
     img.src = imgArray[index];
   });
 });
