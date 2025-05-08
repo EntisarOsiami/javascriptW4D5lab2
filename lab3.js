@@ -1,6 +1,7 @@
 let button=document.getElementsByClassName("button");
 let buttonsArray=Array.from(button);
 console.log(buttonsArray);
+
 let trafficLight = document.getElementById("traffic-light");
 let trafficLightBulbs = trafficLight.children;
 
@@ -18,9 +19,11 @@ buttonsArray.forEach((button) => {
         } else if (button.id === "goButton") {
             color = "green";
         }
+
         trafficLightBulbsArray.forEach((bulb) => {
             bulb.style.backgroundColor = ""; 
         });
+
         switch (color) {
             case "red":
                 trafficLightBulbsArray[0].style.backgroundColor = "red";

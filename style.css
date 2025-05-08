@@ -17,7 +17,7 @@ body {
   
   /* super custom dimensions on the tv screen part */
   .tv-show {
-   /* background-color: black;*/
+   background-color: black;
     top: 5px;
     bottom: 77px;
     right: 36px;
